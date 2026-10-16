@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="/css/style.css"><title>Create account - TaskFlow</title></head>
+<body data-page="register"><div class="auth-page"><div class="auth-card">
+<a class="brand" href="/"><span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>TaskFlow</a>
+<h1>Create your account</h1><p class="lead">Start organizing your tasks in a minute.</p>
+<div class="alert danger" id="form-alert" hidden></div>
+<form id="auth-form" novalidate>
+<div class="field"><label for="fullName">Full name</label><input id="fullName" name="fullName" autocomplete="name" maxlength="80"><p class="err" data-err="fullName"></p></div>
+<div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email"><p class="err" data-err="email"></p></div>
+<div class="field"><label for="password">Password</label><div class="pw"><input id="password" name="password" type="password" autocomplete="new-password"><button type="button" class="pw-toggle" data-toggle="password" aria-label="Show password">Show</button></div>
+<div class="strength"><i id="strength-bar"></i></div><p class="strength-label" id="strength-label">Use 8+ characters with upper, lower case and a number.</p><p class="err" data-err="password"></p></div>
+<div class="field"><label for="confirmPassword">Confirm password</label><div class="pw"><input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password"><button type="button" class="pw-toggle" data-toggle="confirmPassword" aria-label="Show password">Show</button></div><p class="err" data-err="confirmPassword"></p></div>
+<div class="field"><label class="check-line"><input type="checkbox" id="acceptTerms" name="acceptTerms"><span>I accept the terms of use and agree to use TaskFlow responsibly.</span></label><p class="err" data-err="acceptTerms"></p></div>
+<button class="btn primary" type="submit">Create account</button></form>
+<p class="alt">Already have an account? <a href="/login.html">Log in</a></p></div></div>
+<script src="/js/api.js"></script><script src="/js/auth.js"></script></body></html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="/css/style.css"><title>Profile - TaskFlow</title></head>
+<body data-protected="1"><div class="app"><aside class="sidebar" id="sidebar"></aside><div class="main"><header class="topbar" id="topbar"></header><main id="content">
+<div class="page-head"><div><h1>Profile &amp; Settings</h1><p>Manage your account details and security.</p></div><button type="button" class="btn ghost" id="logout-btn"></button></div>
+<div class="two-col">
+<div class="card"><h2>Profile details</h2><form id="profile-form" novalidate>
+<div class="field"><label for="p-name">Full name</label><input id="p-name" name="fullName" maxlength="80" autocomplete="name"><p class="err" data-err="fullName"></p></div>
+<div class="field"><label for="p-email">Email address</label><input id="p-email" name="email" type="email" autocomplete="email"><p class="err" data-err="email"></p></div>
+<p class="muted" id="p-since" style="margin-bottom:14px"></p><button class="btn primary" type="submit">Save changes</button></form></div>
+<div class="card"><h2>Change password</h2><form id="pw-form" novalidate>
+<div class="field"><label for="c-cur">Current password</label><input id="c-cur" name="currentPassword" type="password" autocomplete="current-password"><p class="err" data-err="currentPassword"></p></div>
+<div class="field"><label for="c-new">New password</label><input id="c-new" name="newPassword" type="password" autocomplete="new-password"><p class="err" data-err="newPassword"></p></div>
+<div class="field"><label for="c-conf">Confirm new password</label><input id="c-conf" name="confirmPassword" type="password" autocomplete="new-password"><p class="err" data-err="confirmPassword"></p></div>
+<button class="btn primary" type="submit">Update password</button></form></div></div>
+<div class="card danger-zone"><h2>Delete account</h2><p class="muted" style="margin-bottom:14px">This permanently deletes your account and all of your tasks.</p><button type="button" class="btn danger" id="delete-account">Delete my account</button></div>
+</main></div></div>
+<script src="/js/api.js"></script><script src="/js/taskui.js"></script><script src="/js/profile.js"></script></body></html>
